@@ -1,0 +1,22 @@
+we're going to create full dynamic web application.
+
+Packege we install as follow below..
+
+1) Express.js
+
+2) npm i mongoose { MongoDB }
+
+3) npm i body-parser { data } for request handling
+
+4) npm i hbs { tamplet engin }
+
+5) npm i nodemon --save-dev { we're using this only in dev enviroment not in production }
+
+https://www.youtube.com/watch?v=U4CQOxoBAoA { video stop at 3:18 }
+
+
+body-parser
+express
+hbs
+mongoose
+nodemon 

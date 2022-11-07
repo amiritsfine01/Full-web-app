@@ -1,0 +1,55 @@
+<nav
+  class="navbar navbar-expand-lg navbar-light bg-light py-2 border-bottom border-primary border border border-1"
+>
+  <div class="container">
+    <a class="navbar-brand" href=""><nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{{this.url}}">
+            <img
+              src="{{data.brandIconUrl}}"
+              alt=""
+              width="60"
+              height="30"
+              style="border-radius: 50%;"
+              class="d-inline-block align-text-top"
+            />
+            {{data.brandName}}
+          </a>
+        </div>
+      </nav></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        {{#each data.links}}
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{this.url}}">
+              {{this.label}}</a>
+          </li>
+
+        {{/each}}
+
+      </ul>
+      <form class="d-flex">
+        {{! <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        /> }}
+        <button class="btn btn-outline-success" type="submit">contact Us</button>
+      </form>
+    </div>
+  </div>
+</nav>
